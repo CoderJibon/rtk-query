@@ -1,13 +1,10 @@
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import UserList from "./components/user/UserList.jsx";
-import User from "./components/user/user.jsx";
-
+import router from "./router/router.jsx";
 function App() {
   return (
     <>
-      <User />
-      <hr />
-      <UserList />
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }
